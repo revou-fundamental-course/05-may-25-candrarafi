@@ -1,14 +1,166 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candra Travel Agent</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Travelmate</title>
+    <link rel="stylesheet" href="css/fix.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Travelmate</div>
+        <div class="menu">
+          <a href="#home">Home</a>
+          <a href="#our-package">Our Package</a>
+          <a href="#call-us">Call Us</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <h1>Your Trusted Travel Agent's</h1>
+        <h4>Your happiness is our hapiness</h4>
+        <section class="wrapper">
+          <article class="testimonial">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/0182e687-3785-4437-f780-5bb8f0b67995.jpg"
+              alt="Travel scene with mountains and sun"
+              id="quote-image"
+            />
+            <blockquote id="quote-text">
+              "Liburan jadi menyenangkan bersama Travel Agentku."
+            </blockquote>
+            <div class="author" id="quote-author">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="User icon placeholder"
+              />
+              <div>
+                Florence Hughes <br />
+                <span class="about">Ibu Rumah Tangga, 28 </span>
+              </div>
+            </div>
+          </article>
 
-    <!-- External CSS -->
-    <link rel="sytlesheet" type="text/css" href="css/style.css"/>
-</head>
-<body>
-    
-</body>
+          <section class="contact-form" id="contact-form">
+            <h2>Contact Us</h2>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+            <form id="contactForm" novalidate>
+              <label for="name">Your Name:</label>
+              <input
+                autocomplete="name"
+                id="name"
+                name="name"
+                placeholder="First and last name"
+                type="text"
+                required
+              />
+              <div class="error-message" id="nameError"></div>
+              <label for="email">Email Address:</label>
+              <input
+                autocomplete="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                type="email"
+                required
+              />
+              <div class="error-message" id="emailError"></div>
+              <label for="interest">What are you interested in?</label>
+              <select id="interest" name="interest" required>
+                <option value="">Select option</option>
+                <option value="bali">Bali</option>
+                <option value="japan">Japan</option>
+                <option value="singapore">Singapore</option>
+                <option value="bandung">Bandung</option>
+                <option value="surabaya">Surabaya</option>
+                <option value="europe">Europe Tour</option>
+              </select>
+              <div class="error-message" id="interestError"></div>
+              <button type="submit">SEND</button>
+            </form>
+          </section>
+        </section>
+      
+      <section class="information">
+        <h2>Mengapa Memilih Layanan Travel Kami?</h2>  
+        Liburan adalah momen berharga yang layak direncanakan dengan sempurna. Kami memahami bahwa setiap perjalanan adalah kesempatan untuk menciptakan kenangan indah, menjelajahi tempat baru, Berikut beberapa alasan mengapa ribuan pelanggan telah mempercayakan liburannya kepada kami
+        <ul>
+          <li>Rencana perjalanan yang dipersonalisasi sesuai dengan preferensi & anggaran Anda.</li>
+          <li>Bimbingan ahli dan dukungan 24/7 sepanjang perjalanan Anda.</li>
+          <li>Akses ke penawaran eksklusif dan pengalaman perjalanan unik.</li>
+        </ul>
+      </section>
+      </section>
+
+      <section class="our-package" id="our-package">
+        <h2>Our Package</h2>
+        <section class="package-grid">
+          <article class="package-item">
+            <div class="package-icon">📍</div>
+            <h3>Bali</h3>
+            <p>
+              Explore the beautiful beaches, vibrant culture, and delicious
+              cuisine of Bali. Perfect for relaxation and adventure seekers
+              alike.
+            </p>
+          </article>
+          <article class="package-item">
+            <div class="package-icon">🌏</div>
+            <h3>Japan</h3>
+            <p>
+              Discover Japan’s rich history, stunning landscapes, and modern
+              cities. Experience cherry blossoms, traditional temples, and
+              world-class cuisine.
+            </p>
+          </article>
+          <article class="package-item">
+            <div class="package-icon">🚩</div>
+            <h3>Singapore</h3>
+            <p>
+              Visit the dynamic city-state of Singapore with its iconic skyline,
+              diverse culture, and exciting attractions like Gardens by the Bay
+              and Sentosa Island.
+            </p>
+          </article>
+        </section>
+        <section class="package-grid second-row">
+          <article class="package-item">
+            <div class="package-icon">⭐</div>
+            <h3>Bandung</h3>
+            <p>
+              Enjoy Bandung’s cool climate, scenic tea plantations, and rich
+              culinary scene. Ideal for weekend getaways and cultural
+              exploration.
+            </p>
+          </article>
+          <article class="package-item">
+            <div class="package-icon">⭐</div>
+            <h3>Surabaya</h3>
+            <p>
+              Explore Surabaya’s historical landmarks, vibrant markets, and
+              delicious street food. A perfect blend of tradition and modernity.
+            </p>
+          </article>
+          <article class="package-item">
+            <div class="package-icon">✈️</div>
+            <h3>Europe Tour</h3>
+            <p>
+              Embark on a grand tour across Europe visiting iconic cities like
+              Paris, Rome, and Amsterdam. Experience art, history, and
+              world-famous landmarks.
+            </p>
+          </article>
+        </section>
+      </section>
+      <section class="call-us" id="call-us">
+        <h2>Temukan Perjalanan Impianmu Sekarang</h2>
+        <p>Pilih dari berbagai destinasi eksotis dengan harga terbaik. Kami siap bantu wujudkan pengalaman perjalanan yang tak terlupakan.</p>
+        <button class="contact-us" type="button">Contact Us</button>
+      </section>
+    </main>
+    <footer>&copy; 2025 Travelmate
+    </footer>
+    <script src="js/fix.js"></script>
+  </body>
 </html>
